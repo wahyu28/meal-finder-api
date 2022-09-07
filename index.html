@@ -14,14 +14,58 @@
 <body>
     <div class="container">
         <div class="meal-wrapper">
-            <div class="meal-search">
+            <div class="meal-search text-center mt-5">
                 <h2>Find Meals for Your Ingredients</h2>
                 <blockquote>Real food doesn't have ingredients, real food is ingredients. <br>
                     <cite>- Jamie Oliver</cite>
                 </blockquote>
 
-                <div class="meal-search-box">
-                    <input type="text" class="serch-content form-content" id="">
+                <div class="meal-search-box mx-auto d-flex justify-content-center flex-row" style="max-width: 500px">
+                    <input type="text" class="serch-content form-control" id="search-input"
+                        placeholder="Enter an ingredient">
+                    <button class="btn btn-primary w-50">Search</button>
+                </div>
+            </div>
+
+            <div class="meal-result mt-4">
+                <div class="title text-center">Your Search Results:</div>
+                <div id="meal" class="pt-4">
+                    <div class="row gx-3">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="testing-image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        Testing Decription
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- meal items -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detail Meal -->
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
